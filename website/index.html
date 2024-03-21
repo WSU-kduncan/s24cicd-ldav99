@@ -3,10 +3,120 @@ CTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <style>
+        body{
+    background-color: #124076;
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+form{
+    max-width: 600px;
+    align-items: center;
+    margin: auto;
+    display: grid;
+}
+
+.title{
+    font-size: 42px;
+}
+
+label{
+    font-size: 24px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #FFB534;
+}
+
+.answers{
+    font-size: 18px;
+    color: white;
+}
+
+input[type="text"]{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+
+input[type="submit"]{
+    width: 125px;
+    color: white;
+    background-color: #637A9F;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.submitButton{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10%;
+    width: 60px;
+}
+
+.resetButton{
+    background-color: #BF3131;
+    color: white;
+    border: 3px solid white;
+    width: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 5%;
+}
+
+
+    </style>
 </head>
 <body>
-    
+    <form>
+
+        <label for="" class="title">Sign Up</label>
+
+        <!-- Name -->
+        <label for="">Name:</label>
+        <input type="text" name="name" placeholder="John Doe">
+
+        <!-- Email -->
+        <label for="">Email:</label>
+        <input type="text" name="email" placeholder="JohnDoe@example.com">
+
+        <!-- Phone -->
+        <label for="">Phone:</label>
+        <input type="text" name="phone" placeholder="123 456 7890">
+
+        <!-- Checkboxes -->
+        <label for="">Interests</label>
+        <label for="" class="answers"><input type="checkbox" name="interests[]" value="machineLearning">Machine Learning</label>
+        <label for="" class="answers"><input type="checkbox" name="interests[]" value="cyberSecurity">Cyber Security</label>
+        <label for="" class="answers"><input type="checkbox" name="interests[]" value="frontEndDevelopment">Front End Development</label>
+        <label for="" class="answers"><input type="checkbox" name="interests[]" value="dataSciences" >Data Sciences</label>
+
+        <input type="Submit" value="Submit">
+        <!--<input type="Submit">-->
+        <input class="resetButton" type="reset">
+
+    </form>
 </body>
 </html>
 
