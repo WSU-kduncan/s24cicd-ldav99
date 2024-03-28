@@ -1,4 +1,4 @@
-#Part 1
+# Part 1
 
 - CI Project Overview
   - So for this project I decided to use nginx again. I had used it for the last project and their image on dockerhub had good documentation. 
