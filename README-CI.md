@@ -24,7 +24,7 @@
   - How to set a secret
     - To set a secret I went into the github repository for this project and went to settings, then secrets and variables. I clicked on repository secrets then filled out my name and put the corresponding information in the secret box. 
   - What secret(s) are set for this project
-    - My Dockerhub username and password
+    - My Dockerhub username and password.
 - Behavior of GitHub workflow
   - What does it do and when
   - What variables in workflow are custom to your project
