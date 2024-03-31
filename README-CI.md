@@ -19,6 +19,7 @@
   - what credentials would you recommend providing?
 - How to push container image to Dockerhub (without GitHub Actions)
 - **Link** to your DockerHub repository
+    - https://hub.docker.com/repository/docker/davidson139/ceg3120project4/general
 - Configuring GitHub Secrets
   - How to set a secret
     - To set a secret I went into the github repository for this project and went to settings, then secrets and variables. I clicked on repository secrets then filled out my name and put the corresponding information in the secret box. 
