@@ -28,9 +28,9 @@
 - Behavior of GitHub workflow
   - What does it do and when
   - What variables in workflow are custom to your project
-      - My Dockerhub namespace and repository name. Also my Github secrets.
+    - My Dockerhub namespace and repository name. Also my Github secrets.
   - Thing that may need to be changed if someone else is going to use it or you reuse it
-      - Yes, they would need to use their own login credentials for dockerhub. 
+    - Yes, they would need to use their own login credentials for dockerhub. 
 
     I used this link to help me create my workflow: https://docs.github.com/en/actions/publishing-packages/publishing-docker-images
 
