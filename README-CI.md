@@ -11,3 +11,24 @@
     - To run the container and expose it to an available port I ran ```docker run --name some-nginx -d -p 8080:80 some-content-nginx``` . Again to check that it worked I ran ``` docker container ls ```
   - how to view the project running in the container (open a browser...go to IP and port...)
     - To see my project running I went to my prowser and typed in localhost/8080 and there was my webpage.
+
+# Part 2
+- Process to create public repo in DockerHub
+  - To create a public repo in Dockerhub, I started by clicking repositories at the top of the website. From there I clicked the "Create Repository button". I gave it's unique name and added a short description and made sure public was selected then clicked create.
+- How to authenticate with DockerHub via CLI using Dockerhub credentials
+  - what credentials would you recommend providing?
+- How to push container image to Dockerhub (without GitHub Actions)
+- **Link** to your DockerHub repository
+- Configuring GitHub Secrets
+  - How to set a secret
+    - To set a secret I went into the github repository for this project and went to settings, then secrets and variables. I clicked on repository secrets then filled out my name and put the corresponding information in the secret box. 
+  - What secret(s) are set for this project
+    - My Dockerhub username and password
+- Behavior of GitHub workflow
+  - what does it do and when
+  - what variables in workflow are custom to your project
+      - My Dockerhub namespace and repository name. Also my Github secrets.
+    - think may need to be changed if someone else is going to use it or you reuse it
+      - Yes, they would need to use their own login credentials for dockerhub. 
+
+    I used this link to help me create my workflow: https://docs.github.com/en/actions/publishing-packages/publishing-docker-images
