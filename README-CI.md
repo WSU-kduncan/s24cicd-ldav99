@@ -36,7 +36,7 @@
   - Thing that may need to be changed if someone else is going to use it or you reuse it
     - Yes, they would need to use their own login credentials for dockerhub. 
 
-    I used this link to help me create my workflow: https://docs.github.com/en/actions/publishing-packages/publishing-docker-images
+    I used this link and Github Marketplace to help me create my workflow: https://docs.github.com/en/actions/publishing-packages/publishing-docker-images
 
 # Part 3
   ![graphic](pro4graphic.png)
