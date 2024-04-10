@@ -3,9 +3,9 @@ name: ci
 on:
   push:
     branches: 
-      - 'main'
+      - "main"
     tags:
-      -'v*.*.*'
+      -"v*.*.*"
 
 jobs:
   login:
