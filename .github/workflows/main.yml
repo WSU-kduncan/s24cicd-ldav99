@@ -39,5 +39,6 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v5
         with:
+          context: .
           push: true
-          tags: davidson139/ceg3120project4:latest, ${{ steps.meta.outputs.tags }}
+          tags: davidson139/ceg3120project4:latest , davidson139/ceg3120project4:${{ steps.meta.outputs.tags }}
