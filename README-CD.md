@@ -7,4 +7,5 @@
 
 - Behavior of GitHub workflow
   - what does it do and when
+
 - Link to Docker Hub repository (as additional proof)
