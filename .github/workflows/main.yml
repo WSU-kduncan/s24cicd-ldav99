@@ -40,4 +40,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: davidson139/ceg3120project4:latest
+          tags: ${{ steps.meta.outputs.tags }}
