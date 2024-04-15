@@ -39,4 +39,4 @@
     I used this link and Github Marketplace to help me create my workflow: https://docs.github.com/en/actions/publishing-packages/publishing-docker-images
 
 # Part 3
-  ![graphic](pro4graphic.png)
+  ![graphic](project4graphic.png)
