@@ -1,9 +1,9 @@
 #! /bin/bash
 
 # kill the old container process - stopped & then removed
-docker stop flaskapp
-docker remove flaskapp
+docker stop project4p2
+docker remove project4p2
 # pull fresh image
 docker pull davidson139/ceg3120project4:latest
 # run new container by name, with restart automagic
-docker run -d -p 80:5000 --name flaskapp --restart always davidson139/ceg3120project4:latest
+docker run -d -p 8080:80 --name prokect4p2 --restart always davidson139/ceg3120project4:latest
