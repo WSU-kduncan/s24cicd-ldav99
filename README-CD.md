@@ -21,7 +21,8 @@
     - The first two lines of code in the script stop and remove the active container from my current containers list to make way for the latest container that I will pull in the next step. After that I run a docker pull command to get my latest version of my container from dockerhub. The final line of code runs the container. It names it the same name as it was before so the script always works, It detaches it with -d and binds it to port 8080:80 with the -p flag. The --restart always flag ensures that whenever my instance is started this script will get ran.
   - The container restart script is here ```/home/ubuntu/ceg3120s24-ldav99/s24cicd-ldav99/deployment``` and is called "script.sh" 
 - Setting up a `webhook` listener on the instance
-  - How to install [adnanh's `webhook`](https://github.com/adnanh/webhook) to the instance
+  - To install the webhook I ran ```sudo apt-get install webhook``` and used systemctl to verify that it was installed and recognized.
+  - To set up the webhook listener I
 - `webhook` task definition file
   - Description of what it does
   - Where it should be on the instance (if someone were to use your setup)
