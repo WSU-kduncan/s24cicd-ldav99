@@ -25,12 +25,11 @@
   - To set up the webhook listener I
 - `webhook` task definition file
   - Description of what it does
-  - Where it should be on the instance (if someone were to use your setup)
-  - ADD your webhook definition file to your repository
+  - I have my file stored at  ```/home/ubuntu/ceg3120s24-ldav99/s24cicd-ldav99/deployment/hooks.json```
 - How to start the `webhook`
 - How to modify/ create a webhook service file such that your webhook listener is listening as soon as the system is booted
     - include commands to reload the service respective to files changed (webhook service file versus hook definition file)
-    - ADD your webhook service file to your repository
+    - Add service file to repo
 - How to configure GitHub OR DockerHub to message the listener 
 - Provide proof that the CI & CD workflow work.  This means:
   1. starting with a `commit` that is a change, `tag`ing the `commit`, `push`ing the `tag`
