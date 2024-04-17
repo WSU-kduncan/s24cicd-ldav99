@@ -1,12 +1,7 @@
 [ 
   {
-    "id": "pizza",
-    "execute-command": "/home/ubuntu/deploy.sh",
+    "id": "p5-restart-webhook",
+    "execute-command": "/home/ubuntu/ceg3120s24-ldav99/s24cicd-ldav99/deployment/script.sh",
     "command-working-directory": "/home/ubuntu"
-  },
-  {
-    "id": "deploy",
-    "execute-command": "/home/ubuntu/different.sh",
-    "command-working-directory": "/var/webhook"
   }
 ]
