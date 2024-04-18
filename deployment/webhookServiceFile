@@ -1,0 +1,10 @@
+[Unit]
+Description=Small server for creating HTTP endpoints (hooks)
+Documentation=https://github.com/adnanh/webhook/
+ConditionPathExists=/etc/webhook.conf
+
+[Service]
+ExecStart=/usr/bin/webhook -nopanic -hooks /home/ubuntu/ceg3120s24-ldav99/s24cicd-ldav99/deployment/hooks.json
+
+[Install]
+WantedBy=multi-user.target
