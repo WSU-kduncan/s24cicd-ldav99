@@ -26,18 +26,14 @@
   - In this file I made a simple webhook that runs my restart script when it is messaged by a service. In my case I set up dockerhub to send the message.
   - I have my file stored at  ```/home/ubuntu/ceg3120s24-ldav99/s24cicd-ldav99/deployment/hooks.json```
 - How to start the `webhook`
-  - 
+  - To manually stat the webhook I would have to run ``` -hooks -verbose CHANGE THIS``` 
 - How to modify/ create a webhook service file such that your webhook listener is listening as soon as the system is booted
-    - include commands to reload the service respective to files changed (webhook service file versus hook definition file)
-    - Add service file to repo
-- How to configure GitHub OR DockerHub to message the listener 
-- Provide proof that the CI & CD workflow work.  This means:
-  1. starting with a `commit` that is a change, `tag`ing the `commit`, `push`ing the `tag`
-  2. Showing your GitHub workflow returning a message of success.
-  3. Showing DockerHub has freshly pushed images.
-  4. Showing the instance that you are deploying to has webhook logs indicating the payload was recieved and the container has updated.  
-  
-  Proof can be provided by **either** demonstrating to me in person OR by creating a *video* of the process.  If you go the video route and your file is too large for GitHub, submit it to the "Project 5 - Proof of Flow" Dropbox on Pilot
+  - I made my webhook run automatically by changing the pathing in the service file to point to where my restart script is, while here I also added the  ```-verbose``` flag for my logs.
+  - To reload the webhook service after making a change to the service follow it is the following. ```sudo systemctl daemon-reload``` then ```sudo systemctl restart webhook.service```
+- How to configure GitHub OR DockerHub to message the listener
+  - To make my dockerhub listener I went to my dockerhub repo and clicked webhhoks. From there I just named it and added the URL of ```my-instances-public-ip/hooks/hook-name```
+- Provide proof that the CI & CD workflow work.
+  - Demonstrated in person
 
 
 
