@@ -38,3 +38,4 @@
 
 
 # Part 3
+![Diagram](P5-Diagram.png)
