@@ -26,7 +26,7 @@
   - In this file I made a simple webhook that runs my restart script when it is messaged by a service. In my case I set up dockerhub to send the message.
   - I have my file stored at  ```/home/ubuntu/ceg3120s24-ldav99/s24cicd-ldav99/deployment/hooks.json```
 - How to start the `webhook`
-  - To manually stat the webhook I would have to run ``` -hooks -verbose CHANGE THIS``` 
+  - To manually stat the webhook I would have to run ``` sudo /usr/bin/webhook -hooks hooks.json -verbose ``` 
 - How to modify/ create a webhook service file such that your webhook listener is listening as soon as the system is booted
   - I made my webhook run automatically by changing the pathing in the service file to point to where my restart script is, while here I also added the  ```-verbose``` flag for my logs.
   - To reload the webhook service after making a change to the service follow it is the following. ```sudo systemctl daemon-reload``` then ```sudo systemctl restart webhook.service```
