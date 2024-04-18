@@ -31,7 +31,7 @@
   - I made my webhook run automatically by changing the pathing in the service file to point to where my restart script is, while here I also added the  ```-verbose``` flag for my logs.
   - To reload the webhook service after making a change to the service follow it is the following. ```sudo systemctl daemon-reload``` then ```sudo systemctl restart webhook.service```
 - How to configure GitHub OR DockerHub to message the listener
-  - To make my dockerhub listener I went to my dockerhub repo and clicked webhhoks. From there I just named it and added the URL of ```my-instances-public-ip/hooks/hook-name```
+  - To make my dockerhub message I went to my dockerhub repo and clicked webhhoks. From there I just named it and added the URL of ```my-instances-public-ip/hooks/hook-name```
 - Provide proof that the CI & CD workflow work.
   - Demonstrated in person
 
