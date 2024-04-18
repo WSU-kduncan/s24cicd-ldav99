@@ -22,11 +22,11 @@
   - The container restart script is here ```/home/ubuntu/ceg3120s24-ldav99/s24cicd-ldav99/deployment``` and is called "script.sh" 
 - Setting up a `webhook` listener on the instance
   - To install the webhook I ran ```sudo apt-get install webhook``` and used systemctl to verify that it was installed and recognized.
-  - To set up the webhook listener I
 - `webhook` task definition file
-  - Description of what it does
+  - In this file I made a simple webhook that runs my restart script when it is messaged by a service. In my case I set up dockerhub to send the message.
   - I have my file stored at  ```/home/ubuntu/ceg3120s24-ldav99/s24cicd-ldav99/deployment/hooks.json```
 - How to start the `webhook`
+  - 
 - How to modify/ create a webhook service file such that your webhook listener is listening as soon as the system is booted
     - include commands to reload the service respective to files changed (webhook service file versus hook definition file)
     - Add service file to repo
